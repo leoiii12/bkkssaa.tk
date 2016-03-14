@@ -1,0 +1,19 @@
+{
+  "name": "Alumni-Website",
+  "version": "1.0.0",
+  "description": "Alumni Website",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "*",
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-cssnano": "*",
+    "gulp-htmlmin": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "live-server": "*",
+    "shelljs": "*"
+  }
+}
