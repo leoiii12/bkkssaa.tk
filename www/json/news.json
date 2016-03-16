@@ -1,31 +1,159 @@
 [
   {
-    "title": "General Meeting 2016",
-    "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.",
-    "type": 0
+    "id": 20,
+    "title": "2016 新春 BBQ",
+    "content": [
+      {
+        "label": "詳情",
+        "link": "files/20/Details1516BBQ.pdf"
+      },
+      {
+        "label": "報名表",
+        "link": "files/20/Reg1516BBQ.pdf"
+      }
+    ],
+    "type": 1
   },
   {
+    "id": 19,
+    "title": "General Meeting 2016",
+    "content": [
+      {
+        "label": "詳情",
+        "link": "files/19/general_meeting_2016.pdf"
+      }
+    ],
+    "type": 1
+  },
+  {
+    "id": 18,
     "title": "2015 新春 BBQ",
     "content": [
       {
         "label": "詳情",
-        "link": "json/news.json"
+        "link": "files/18/Details1415BBQ.pdf"
+      },
+      {
+        "label": "報名表",
+        "link": "files/18/Reg1415BBQ.pdf"
       }
     ],
     "type": 1
   },
   {
-    "title": "擴建校舍工程計劃經費募損14－15",
+    "id": 17,
+    "title": "擴建校舍工程計劃經費募損 14 - 15",
     "content": [
       {
         "label": "詳情",
-        "link": "json/news.json"
+        "link": "files/17/newblkdonationletter1415.pdf"
       },
       {
-        "label": "詳情",
-        "link": "json/news.json"
+        "label": "捐款表格",
+        "link": "files/17/newblkdonationform1415.pdf"
       }
     ],
     "type": 1
+  },
+  {
+    "id": 16,
+    "title": "第五屆校友會成立了",
+    "content": [
+      {
+        "label": "詳情",
+        "link": "files/16/position.pdf"
+      }
+    ],
+    "type": 1
+  },
+  {
+    "id": 15,
+    "title": "2014 新春 BBQ",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 14,
+    "title": "校友會會員大會",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 13,
+    "title": "第五屆校友會邀請信",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 12,
+    "title": "敬師周綜合表演 12 - 13",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 11,
+    "title": "2012 寒冬校友 BBQ 晚會",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 10,
+    "title": "30 周年校慶老師 - 校友聚餐",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 9,
+    "title": "第四屆校友會成立了",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 8,
+    "title": "30 周年校慶環「城」步行籌款",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 7,
+    "title": "校友會會員大會",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 6,
+    "title": "三十周年校慶暨開放日典禮及表演",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 5,
+    "title": "2012 年年宵市場",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 4,
+    "title": "校友 - 老師 - 學生 足球友誼賽",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 3,
+    "title": "第三屆幹事會已組成，並已於 20 / 12 / 2009 晚上舉行了就職典禮",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 2,
+    "title": "校友鄧敏聰先生獲選為本校校董會校友代表",
+    "content": null,
+    "type": 0
+  },
+  {
+    "id": 1,
+    "title": "校友 - 老師BBQ聯歡會已於 12 / 6 / 2010 舉行，校友可到「活動紀錄」瀏覽",
+    "content": null,
+    "type": 0
   }
 ]

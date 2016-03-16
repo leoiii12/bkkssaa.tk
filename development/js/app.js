@@ -34,6 +34,16 @@ bkkssApplication
                 }
             })
 
+            .state("site.members", {
+                url: "/Members",
+                views: {
+                    "mainContent": {
+                        templateUrl: "pages/members/members.html",
+                        controller: "MembersCtrl"
+                    }
+                }
+            })
+
             .state("site.contact-us", {
                 url: "/ContactUs",
                 views: {

@@ -15,7 +15,8 @@ bkkssControllers.controller("HomeCtrl", ["$scope", "$http", "$uibModal", functio
         var modal = $uibModal.open({
             animation: true,
             templateUrl: "pages/modals/news-item.html",
-            size: "sm",
+            size: "lg",
+            controller: "NewsItemCtrl",
             resolve: {
                 newsItem: function () {
                     return newsItem;

@@ -3,6 +3,7 @@ bkkssControllers.controller("LayoutCtrl", ["$scope", "$rootScope", "$uibModal", 
 
     $scope.menu = [
         {title: "主頁", path: "site.home"},
+        {title: "歷年成員名單", path: "site.members"},
         {title: "聯絡我們", path: "site.contact-us"}
     ];
 
