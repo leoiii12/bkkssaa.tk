@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="bkkss">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <base href="/">
 
-    <title>佛教覺光法師中學 - 校友會</title>
+    <title ng-bind="pageTitle"></title>
 
     <!-- compiled css output -->
     <link href="application.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
     <![endif]-->
 </head>
 
-<body ng-app="bkkss" ui-view>
+<body ui-view>
 
 <!-- site output -->
 <script src="libraries.min.js"></script>

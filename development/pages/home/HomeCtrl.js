@@ -9,7 +9,11 @@ bkkssControllers.controller("HomeCtrl", ["$scope", "$http", "$uibModal", functio
         $scope.newsItems = data;
     });
 
+    // Public functions
+
     $scope.openNewsItemModal = openNewsItemModal;
+
+    // Private functions
 
     function openNewsItemModal(newsItem) {
         var modal = $uibModal.open({

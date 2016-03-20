@@ -2,19 +2,26 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-center">
-                <p class="section-header">歷年成員名單</p>
+                <p class="section-header">{{sectionTitle}}</p>
             </div>
         </div>
 
-        <div class="row" ng-repeat="association in associations">
+        <div class="row" ng-repeat="association in ::associations">
             <div class="col-xs-12">
-                <div class="text-center"><h4>{{association.name}}</h4></div>
+                <div class="text-center">
+                    <h4>{{::association.name}}</h4>
+                    <img ng-if="association.image" class="members-image" ng-src="{{association.image}}" alt="Members">
+                </div>
+
+                <br>
+
                 <table class="table table-striped" id="members-list">
-                    <tr ng-repeat="member in association.members">
+                    <tr ng-repeat="member in ::association.members">
                         <td>{{member.position}}</td>
-                        <td>{{member.chinese}} <span ng-if="member.english || member.year">({{member.english}}<span ng-if="member.english">, </span>{{member.year}})</span></td>
+                        <td>{{member.chinese}} <span ng-if="member.english || member.year">(<span ng-if="member.english">{{member.english}}, </span>{{member.year}})</span></td>
                     </tr>
                 </table>
+
             </div>
         </div>
     </div>

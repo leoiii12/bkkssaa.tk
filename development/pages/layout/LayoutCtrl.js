@@ -2,8 +2,9 @@ bkkssControllers.controller("LayoutCtrl", ["$scope", "$rootScope", "$uibModal", 
     $scope.isOpened = false;
 
     $scope.menu = [
-        {title: "主頁", path: "site.home"},
+        {title: "最新消息", path: "site.home"},
         {title: "歷年成員名單", path: "site.members"},
+        {title: "我們的相冊", path: "site.galleries"},
         {title: "聯絡我們", path: "site.contact-us"}
     ];
 
@@ -13,7 +14,6 @@ bkkssControllers.controller("LayoutCtrl", ["$scope", "$rootScope", "$uibModal", 
     });
 
     // Public functions
-
     // Private functions
 
 }]);

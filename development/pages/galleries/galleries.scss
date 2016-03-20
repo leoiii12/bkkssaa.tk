@@ -1,0 +1,33 @@
+$galleries-thumbnail-height: 250px;
+
+.galleries-thumbnail {
+  text-align: center;
+
+  .galleries-thumbnail-image-container {
+    height: $galleries-thumbnail-height;
+
+    .galleries-thumbnail-vertical-helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    .galleries-thumbnail-image {
+      display: inline-block;
+      vertical-align: middle;
+
+      max-width: 100%;
+      max-height: $galleries-thumbnail-height;
+    }
+  }
+
+  .galleries-thumbnail-name {
+    font-size: 18px;
+    font-weight: 700;
+
+    margin: 5px 0;
+
+    overflow: hidden;
+    height: 50px;
+  }
+}

@@ -2,14 +2,14 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-center">
-                <p class="section-header">最新消息</p>
+                <p class="section-header">{{sectionTitle}}</p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-xs-12">
                 <ul>
-                    <li ng-repeat="newsItem in newsItems">
+                    <li ng-repeat="newsItem in ::newsItems track by newsItem.id">
                         <div ng-if="newsItem.type == 0">{{newsItem.title}}</div>
                         <div ng-if="newsItem.type == 1">
                             {{newsItem.title}}

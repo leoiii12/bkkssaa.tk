@@ -66,9 +66,3 @@ $grid-float-breakpoint: 992px;
 
 // Theme
 @import "bootstrap-flaty/_flaty";
-
-// Fixed page moving when modal is opening
-.modal-open {
-  overflow: inherit;
-  padding-right: inherit !important;
-}

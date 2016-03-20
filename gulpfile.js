@@ -14,15 +14,14 @@ var paths = {
     workingStyles: "./development/scss/",
     styles: [
         "./development/scss/application.scss",
-        "./development/pages/*/*.scss"
+        "./development/pages/*/*.scss",
+        "./development/lib/ngGallery/src/css/ngGallery.css"
     ],
     libraries: [
         "./development/lib/angular/angular.min.js",
         "./development/lib/angular-ui-router/release/angular-ui-router.min.js",
         "./development/lib/angular-animate/angular-animate.min.js",
-        "./development/lib/angular-bootstrap/ui-bootstrap-tpls.min.js",
-        "./development/lib/ngstorage/ngStorage.min.js",
-        "./development/lib/ngmap/build/scripts/ng-map.min.js"
+        "./development/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"
     ],
     scripts: [
         "./development/js/app.js",

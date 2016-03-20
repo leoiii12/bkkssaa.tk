@@ -5,7 +5,7 @@ bkkssControllers.controller("MembersCtrl", ["$scope", "$http", "$uibModal", func
         url: "/json/members.json"
     }).then(function (response) {
         var data = response.data;
-        console.log(data);
+
         $scope.associations = data;
     });
 

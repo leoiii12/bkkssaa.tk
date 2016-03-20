@@ -1,4 +1,4 @@
-var bkkssApplication = angular.module("bkkss", ["ui.router", "ui.bootstrap", "ngAnimate", "ngStorage", "ngMap", "bkkss.controllers", "bkkss.services", "bkkss.filters", "bkkss.directives"]);
+var bkkssApplication = angular.module("bkkss", ["ui.router", "ui.bootstrap", "ngAnimate", "bkkss.controllers", "bkkss.services", "bkkss.filters", "bkkss.directives"]);
 var bkkssControllers = angular.module("bkkss.controllers", []);
 var bkkssServices = angular.module("bkkss.services", []);
 var bkkssFilters = angular.module("bkkss.filters", []);
@@ -6,10 +6,10 @@ var bkkssDirectives = angular.module("bkkss.directives", []);
 
 bkkssApplication
 
-    .run(["$localStorage", function ($localStorage) {
-        // Initialise variables
-        $localStorage.$default({
-            Authentication: null
+    .run(["$rootScope", function ($rootScope) {
+        $rootScope.$on("$stateChangeStart", function (event, toState) {
+            $rootScope.sectionTitle = toState.title;
+            $rootScope.pageTitle = toState.title + " - 佛教覺光法師中學校友會";
         });
     }])
 
@@ -26,6 +26,7 @@ bkkssApplication
 
             .state("site.home", {
                 url: "/Home",
+                title: "最新消息",
                 views: {
                     "mainContent": {
                         templateUrl: "pages/home/home.html",
@@ -36,6 +37,7 @@ bkkssApplication
 
             .state("site.members", {
                 url: "/Members",
+                title: "歷年成員名單",
                 views: {
                     "mainContent": {
                         templateUrl: "pages/members/members.html",
@@ -44,12 +46,23 @@ bkkssApplication
                 }
             })
 
-            .state("site.contact-us", {
-                url: "/ContactUs",
+            .state("site.galleries", {
+                url: "/Galleries",
+                title: "我們的相冊",
                 views: {
                     "mainContent": {
-                        templateUrl: "pages/contact-us/contact-us.html",
-                        controller: "ContactUsCtrl"
+                        templateUrl: "pages/galleries/galleries.html",
+                        controller: "GalleriesCtrl"
+                    }
+                }
+            })
+
+            .state("site.contact-us", {
+                url: "/ContactUs",
+                title: "聯絡我們",
+                views: {
+                    "mainContent": {
+                        templateUrl: "pages/contact-us/contact-us.html"
                     }
                 }
             });
