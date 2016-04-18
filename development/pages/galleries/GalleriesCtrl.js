@@ -6,6 +6,17 @@ bkkssControllers.controller("GalleriesCtrl", ["$scope", "$http", "$uibModal", fu
     }).then(function (response) {
         var data = response.data;
 
+        function compare(a, b) {
+            if (a.Year < b.Year)
+                return 1;
+            else if (a.Year > b.Year)
+                return -1;
+            else
+                return 0;
+        }
+
+        data.sort(compare);
+
         $scope.galleries = data;
     });
 
