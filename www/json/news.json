@@ -1,5 +1,20 @@
 [
   {
+    "id": 26,
+    "title": "35 周年晚宴 - 老師 - 校友聚餐晚會",
+    "content": [
+      {
+        "label": "詳情",
+        "link": "files/26/2017-dinner-information.pdf"
+      },
+      {
+        "label": "報名表格",
+        "link": "files/26/2017-dinner-enrollment-form.pdf"
+      }
+    ],
+    "type": 1
+  },
+  {
     "id": 25,
     "title": "2017 陸運會校友接力賽",
     "content": [
