@@ -1,6 +1,5 @@
 var gulp = require("gulp");
 var gutil = require("gulp-util");
-var bower = require("bower");
 var concat = require("gulp-concat");
 var sass = require("gulp-sass");
 var nano = require('gulp-cssnano');
@@ -14,14 +13,14 @@ var paths = {
     workingStyles: "./development/scss/",
     styles: [
         "./development/scss/application.scss",
-        "./development/pages/*/*.scss",
-        "./development/lib/ngGallery/src/css/ngGallery.css"
+        "./development/pages/*/*.scss"
     ],
     libraries: [
-        "./development/lib/angular/angular.min.js",
-        "./development/lib/angular-ui-router/release/angular-ui-router.min.js",
-        "./development/lib/angular-animate/angular-animate.min.js",
-        "./development/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"
+        "./node_modules/angular/angular.min.js",
+        "./node_modules/angular-animate/angular-animate.min.js",
+        "./node_modules/angular-touch/angular-touch.min.js",
+        "./node_modules/angular-ui-router/release/angular-ui-router.min.js",
+        "./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"
     ],
     scripts: [
         "./development/js/app.js",
@@ -110,15 +109,6 @@ gulp.task("pages", function (done) {
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest("./www/pages/"))
         .on("end", done);
-});
-
-// Install
-
-gulp.task("install", ["git-check"], function () {
-    return bower.commands.install()
-        .on("log", function (data) {
-            gutil.log("bower", gutil.colors.cyan(data.id), data.message);
-        });
 });
 
 // Private functions : install

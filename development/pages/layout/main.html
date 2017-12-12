@@ -1,55 +1,62 @@
-<!-- Header Start -->
-<header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12">
-                <p id="website-title">佛教覺光法師中學校友會</p>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- Header End -->
+<div id="main">
 
-<nav class="navbar navbar-inverse" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" ng-click="isOpened = !isOpened">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand visible-xs visible-sm" ui-sref="site.home">Welcome</a>
-        </div>
-
-        <div class="navbar-collapse" uib-collapse="!isOpened">
-            <ul class="nav navbar-nav">
-                <li ng-repeat="item in menu">
-                    <a ui-sref="{{item.path}}">{{item.title}}</a>
-                </li>
-                <li><a href="http://gb.tovery.net/bkkss">留言版</a></li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdJHpnPAtrHjwhl_NuB_vwrZ27p7B_h5uif_Hfn5_3bO8UKrg/viewform">登記</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div ui-view="mainContent" class="slide"></div>
-
-<hr class="boxed">
-
-<!-- Footer Start -->
-<footer class="footer">
-    <div class="container">
-        <div class="row expanded">
-            <div class="col-xs-12 text-center">
-                <div class="">
-                    <p>Copyright © 2016 Buddhist Kok Kwong Secondary School Alumni Association</p>
+    <!-- Header Start -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p id="website-title">佛教覺光法師中學校友會</p>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- Footer End -->
+    </header>
+    <!-- Header End -->
 
-<br>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" ng-click="isOpened = !isOpened">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand visible-xs visible-sm" ui-sref="site.home">Welcome</a>
+            </div>
+
+            <div class="navbar-collapse" uib-collapse="!isOpened">
+                <ul class="nav navbar-nav">
+                    <li ng-repeat="item in menu">
+                        <a ui-sref="{{item.path}}">{{item.title}}</a>
+                    </li>
+                    <li><a target="_blank" href="http://gb.tovery.net/bkkss">留言版</a></li>
+                    <li class="emphasized">
+                        <a target="_blank"
+                           href="https://docs.google.com/forms/d/e/1FAIpQLSdJHpnPAtrHjwhl_NuB_vwrZ27p7B_h5uif_Hfn5_3bO8UKrg/viewform">登記成為會員</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div ui-view="mainContent" class="slide"></div>
+
+    <hr class="boxed">
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row expanded">
+                <div class="col-xs-12 text-center">
+                    <div>
+                        <p>Copyright © 2017 Buddhist Kok Kwong Secondary School Alumni Association</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <br>
+
+</div>
