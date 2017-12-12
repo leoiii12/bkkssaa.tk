@@ -2,6 +2,26 @@ bkkssControllers.controller("HomeCtrl", ["$scope", "$http", "$uibModal", functio
 
     $http({
         method: "GET",
+        url: "/json/galleries.json"
+    }).then(function (response) {
+        var data = response.data;
+
+        function compare(a, b) {
+            if (a.Year < b.Year)
+                return 1;
+            else if (a.Year > b.Year)
+                return -1;
+            else
+                return 0;
+        }
+
+        $scope.galleries = data
+            .sort(compare)
+            .slice(0, 4);
+    });
+
+    $http({
+        method: "GET",
         url: "/json/news.json"
     }).then(function (response) {
         var data = response.data;

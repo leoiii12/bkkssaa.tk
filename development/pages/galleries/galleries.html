@@ -1,16 +1,14 @@
-<section id="home-news">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <p class="section-header">{{sectionTitle}}</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-4 col-lg-3 galleries-thumbnail" ng-repeat="gallery in galleries" ng-click="openGalleryModal(gallery.name, gallery.images)">
-                <div class="galleries-thumbnail-image-container"><span class="galleries-thumbnail-vertical-helper"></span><img class="galleries-thumbnail-image" ng-src="images/galleries/{{gallery.images[0].thumbnail}}"></div>
-                <div class="galleries-thumbnail-name">{{gallery.name}}</div>
-                <div class="galleries-thumbnail-description" ng-if="gallery.description">{{gallery.description}}</div>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <h1>{{sectionTitle}}</h1>
         </div>
     </div>
-</section>
+    <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-3 galleries-thumbnail" ng-repeat="gallery in galleries" ng-click="openGalleryModal(gallery.name, gallery.images)">
+            <div class="galleries-thumbnail-image-container"><span class="galleries-thumbnail-vertical-helper"></span><img class="galleries-thumbnail-image" ng-src="images/galleries/{{gallery.images[0].thumbnail}}"></div>
+            <div class="galleries-thumbnail-name">{{gallery.name}}</div>
+            <div class="galleries-thumbnail-description" ng-if="gallery.description">{{gallery.description}}</div>
+        </div>
+    </div>
+</div>

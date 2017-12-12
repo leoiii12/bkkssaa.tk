@@ -1,27 +1,38 @@
-<section id="home-news">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <p class="section-header">{{sectionTitle}}</p>
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <h1>{{sectionTitle}}</h1>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <!-- Gallery Preview -->
+        <div class="hidden-xs col-md-6">
+            <div class="col-md-6 galleries-thumbnail" ng-repeat="gallery in galleries" ui-sref="site.galleries">
+                <div class="galleries-thumbnail-image-container"><span class="galleries-thumbnail-vertical-helper"></span><img class="galleries-thumbnail-image" ng-src="images/galleries/{{gallery.images[0].thumbnail}}"></div>
+                <div class="galleries-thumbnail-name">{{gallery.name}}</div>
+                <div class="galleries-thumbnail-description" ng-if="gallery.description">{{gallery.description}}</div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <ul>
-                    <li ng-repeat="newsItem in ::newsItems track by newsItem.id">
-                        <div ng-if="newsItem.type == 0">{{newsItem.title}}</div>
-                        <div ng-if="newsItem.type == 1">
-                            {{newsItem.title}}
-                            <span ng-repeat="(key, value) in newsItem.content">&nbsp;(<a ng-href="{{value.link}}" target="_blank">{{value.label}}</a>)</span>
-                        </div>
-                        <div ng-if="newsItem.type == 2">
-                            {{newsItem.title}}
-                            &nbsp;(<a ng-click="openNewsItemModal(newsItem)">詳情</a>)
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <!-- News -->
+        <div class="col-xs-12 col-md-6">
+            <ul>
+                <li ng-repeat="newsItem in newsItems track by newsItem.id">
+                    <div ng-if="newsItem.type == 0">{{newsItem.title}}</div>
+                    <div ng-if="newsItem.type == 1">
+                        {{newsItem.title}}
+                        <span ng-repeat="(key, value) in newsItem.content">&nbsp;(<a ng-href="{{value.link}}" target="_blank">{{value.label}}</a>)</span>
+                    </div>
+                    <div ng-if="newsItem.type == 2">
+                        {{newsItem.title}}
+                        &nbsp;(<a ng-click="openNewsItemModal(newsItem)">詳情</a>)
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-</section>
+
+</div>

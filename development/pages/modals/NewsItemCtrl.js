@@ -7,5 +7,6 @@ bkkssControllers.controller("NewsItemCtrl", ["$scope", "$uibModalInstance", "new
     // Private functions
     function closeModal() {
         $uibModalInstance.dismiss('cancel');
-    };
+    }
+
 }]);
