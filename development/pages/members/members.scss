@@ -1,17 +1,21 @@
-#members-list > tbody > tr > td {
+#members {
 
-  &:nth-child(1) {
-    min-width: 100px;
-    width: 40%;
-    text-align: center;
+  .members-image {
+    max-width: 95%;
   }
 
-  &:nth-child(2) {
-    text-align: center;
+  #members-list > tbody > tr > td {
+
+    &:nth-child(1) {
+      min-width: 100px;
+      width: 40%;
+      text-align: center;
+    }
+
+    &:nth-child(2) {
+      text-align: center;
+    }
+
   }
 
-}
-
-.members-image {
-  max-width: 95%;
 }
