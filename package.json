@@ -7,24 +7,24 @@
   },
   "description": "BKKSS Alumni Website",
   "dependencies": {
-    "angular": "^1.6.7",
-    "angular-animate": "^1.6.7",
-    "angular-filter": "^0.5.17",
-    "angular-touch": "^1.6.7",
-    "angular-ui-bootstrap": "^2.5.6",
-    "angular-ui-router": "^0.4.3",
-    "bootstrap-sass": "^3.3.7"
+    "angular": "1.6.7",
+    "angular-animate": "1.6.7",
+    "angular-filter": "0.5.17",
+    "angular-touch": "1.6.7",
+    "angular-ui-bootstrap": "2.5.6",
+    "angular-ui-router": "0.4.3",
+    "bootstrap-sass": "3.3.7"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "live-server": "^1.2.0",
-    "shelljs": "^0.7.8"
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.1",
+    "gulp-cssnano": "2.1.2",
+    "gulp-htmlmin": "3.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.1.0",
+    "gulp-uglify": "3.0.0",
+    "gulp-util": "3.0.8",
+    "live-server": "1.2.0",
+    "shelljs": "0.7.8"
   }
 }
