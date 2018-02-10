@@ -7,7 +7,7 @@ You should only modify the json files in the www/json folder.
 
 - id - unique integer
 - title - string
-- content - an array of {label: "string", link: "string"}
+- content - an array of {"label": "string", "link": "string"}
 - type (0 - title, 1 - title + content)
 - date (obtained from http://coderstoolbox.net/unixtimestamp/)
 
